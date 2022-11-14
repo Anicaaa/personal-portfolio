@@ -118,7 +118,7 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 80px;
+    padding: 60px;
 }
 
 .headshot {
@@ -130,6 +130,51 @@ p {
 .headshot-container {
     display: flex;
     align-items: center;
+}
+
+.info-text {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .sub-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .information {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        .headshot {
+            width: 350px;
+            margin-left: 120px;
+        }
+
+        .info-text, .info-text2 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            padding-top: 250px;
+        }
+
+        .socials {
+            display: flex;
+        }
 }
 
 .project-title {
@@ -239,19 +284,9 @@ form .btn {
 
 
 @media only screen and (max-width: 1000px) {
-    .hamburger {
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: black;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
-    }
-
     ul {
         display: none;
-        margin: 0ppx;
+        margin: 0px;
     }
 
     ul.show {
@@ -261,14 +296,21 @@ form .btn {
     .navbar {
         display: flex;
         flex-direction: column-reverse;
-        background-color: white;
     }
 
-        .active {
+    .active {
             background-color: #1c1d25;
         }
     
-        .active ul li a {
-            color: black;
-        }
+    .active ul li a {
+        color: white;
+    }
+
+    form .btn {
+        padding: 10px 10px;
+        font-size: 15px;
+        margin-top: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
 }

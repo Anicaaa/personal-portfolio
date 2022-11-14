@@ -1,8 +1,6 @@
 //STICKY NAVBAR
 const navbarEl = document.querySelector(".navbar");
-
 const subSectionEl = document.querySelector(".sub-section");
-
 const logoEl = document.querySelector(".logo-black");
 
 window.addEventListener("scroll", () => {
@@ -14,16 +12,6 @@ window.addEventListener("scroll", () => {
     logoEl.setAttribute("src", "images/logoBlack.svg");
   }
 });
-
-//HAMBURGER BUTTON not working yet
-const hamburgerButton = document.getElementById("hamburger");
-const navList = document.getElementById("nav-list");
-
-function toggleButton() {
-  navList.classList.toggle("show");
-}
-
-hamburgerButton.addEventListener("click", toggleButton);
 
 //CONTACT FORM
 
